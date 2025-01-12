@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi panzona <3 ️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffc0cb; /* Rosa */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative; /* Añadido para asegurar que los GIFs se posicionen correctamente */
+        }
+
+        header {
+            padding: 20px;
+            font-size: 2em;
+            color: #ffffff;
+            background-color: #ff69b4; /* Rosa más intenso */
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10; /* Asegura que el contenido siempre se muestre encima de los GIFs */
+        }
+
+        .images {
+            margin: 20px 0;
+        }
+
+        .image-container {
+            display: flex; /* Usa Flexbox para alinear elementos en fila */
+            justify-content: center; /* Centra las imágenes horizontalmente */
+            gap: 20px; /* Espacio entre las imágenes */
+            flex-wrap: wrap; /* Permite que las imágenes se ajusten si no caben en la fila */
+        }
+
+        .image-container img {
+            max-width: 45%; /* Ajusta el tamaño de las imágenes para que no sean demasiado grandes */
+            height: auto; /* Mantén las proporciones correctas */
+            border-radius: 10px; /* Bordes redondeados opcionales */
+        }
+
+        .text {
+            margin: 20px 0;
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Estilo del botón */
+        .open-popup-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff69b4; /* Rosa vibrante */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            top: 98%; /* 50% desde la parte superior */
+            left: 9%; /* 30% desde la parte izquierda */
+            transform: translate(-50%, -50%); /* Centra el botón en ese lugar */
+        }
+        .open-popup-btn:hover {
+            background-color: #ff1493; /* Más oscuro al pasar el mouse */
+        }
+
+        /* Estilo del pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .popup-content {
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 580px;
+        }
+
+        .popup-image {
+            max-width: 400%;
+            max-height: 400px;
+            border-radius: 10px;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .close-popup:hover {
+            color: #ff69b4;
+        }
+
+        /* Estilo para los GIFs */
+        .gif-container {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            z-index: 5; /* Asegura que los GIFs estén detrás del texto */
+        }
+
+        /* Animación para mover el GIF de izquierda a derecha */
+        @keyframes move-left-to-right {
+            0% {
+                left: -200px; /* Empieza fuera de la pantalla a la izquierda */
+            }
+            100% {
+                left: 100%; /* Mueve el GIF a la derecha de la pantalla */
+            }
+        }
+
+        /* Aplicando la animación al primer GIF */
+        .gif-container-1 {
+            animation: move-left-to-right 1.3s linear infinite; /* Movimiento continuo */
+        }
+
+        .gif-container-1 img {
+            width: 150%;
+            height: auto;
+        }
+
+        .gif-container-2 img {
+            width: 300%;
+            height: auto;
+        }  
+
+        .gif-container-3 img {
+            width: 200%;
+            height: auto;
+        }
+
+        .gif-container-4 img {
+            width: 200%;
+            height: auto;
+        }             
+    </style>
+</head>
+<body>
+    <header>PANZONA CABEZA DE CHOROMPIPE 💓</header>
+
+    <div class="content">
+        <!-- Sección para imágenes y gifs -->
+        <div class="images">
+            <h2>Momazos el lechero</h2>
+            <div class="image-container">
+                <!-- Imagen 1 -->
+                <img src="gatos.jpg" alt="Un momento especial">
+                <!-- Imagen 2 -->
+                <img src="perro.jpg" alt="Otro momento especial">
+            </div>
+
+            <!-- Primer GIF en movimiento de izquierda a derecha -->
+            <div class="gif-container gif-container-1" style="top: 98%;">
+                <img src="snoopy3.gif" alt="GIF 1">
+            </div>
+
+            <!-- Segundo GIF -->
+            <div class="gif-container gif-container-2" style="top: 30%; left: 0%;">
+                <img src="snoopy1.gif" alt="GIF 2">
+            </div>
+
+            <!-- Tercer GIF -->
+            <div class="gif-container gif-container-3" style="top: 20%; left: 75%;">
+                <img src="snoopy2.gif" alt="GIF 3">
+            </div>
+            <!-- Cuarto GIF -->
+            <div class="gif-container gif-container-4" style="top: 50%; left: 70%;">
+                <img src="snoopy4.gif" alt="GIF 3">
+            </div>            
+        </div>
+
+        <div class="text">
+            <h2>De un panzon para una panzona con la panza mas grande</h2>
+            <br><br>
+            <p>Hola Karlita, te amo mucho, hace tiempo que no te escribía algo como esto, así que espero que te guste corazón.</p>
+
+            <p>Quiero decirte que te amo mucho, ya pronto vamos a cumplir dos años y aunque la distancia no lo hace fácil, nunca
+            he dejado de quererte ni un poquito, aprecio todo lo que hacemos juntos y te quiero un montón, sos mi noviecita querida de mi corazón y espero poder verte pronto.</p>
+
+            <p>Espero que este año podamos ir a Costa Rica y simplemente divertirnos como cuando estabas aquí, aunque no sea mucho tiempo estoy seguro que nos divertiremos mucho mi amor.</p>
+
+            <p>Aunque la distancia nos separe, mi corazón siempre está contigo, perdón si has sentido que no te he dado tantos detalles como solía darte antes, no significa que te quiera ni una pizca menos, solamente es un poco complicado encontrar formas de hacerlo a la distancia, pero te prometo que ingeniaré nuevas formas de recordarte lo mucho que te amo siempre.</p>
+
+            <p>Quiero que sepas que siempre cuentas conmigo, para todo, siempre estoy para escucharte sin importar lo que sea que necesites, significas mucho para mí, te amo <3.</p>
+            <br><br>
+            <p>Con amor, don panza.</p>
+        </div>
+
+        <div class="popup-container">
+            <!-- Botón para abrir el pop-up -->
+            <button class="open-popup-btn">Abrir bajo tu propia responsabilidad</button>
+
+            <!-- Ventana emergente (pop-up) oculta inicialmente -->
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span> <!-- Botón para cerrar -->
+                    <img src="hola.jpg" alt="Imagen Especial" class="popup-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Selecciona los elementos
+        const popup = document.getElementById('popup');
+        const openBtn = document.querySelector('.open-popup-btn');
+        const closeBtn = document.querySelector('.close-popup');
+
+        // Abre el pop-up al hacer clic en el botón
+        openBtn.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+
+        // Cierra el pop-up al hacer clic en la "X"
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        // Cierra el pop-up si haces clic fuera del contenido
+        window.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<button id="playBtn" class="play-button">Boton Mágico</button>
+<audio id="myAudio" loop>
+    <source src="Dos Galaxias.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    document.getElementById('playBtn').addEventListener('click', function() {
+        document.getElementById('myAudio').play();
+    });
+</script>
+
+<style>
+    /* Cambiar la fuente a Pacifico desde Google Fonts */
+    .play-button {
+        font-family: 'Pacifico', cursive;
+        padding: 15px 30px;
+        font-size: 18px;
+        background-color: #ff69b4; /* Rosa vibrante */
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .play-button:hover {
+        background-color: #ff1493;
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(255, 20, 147, 0.5); /* Resplandor */
+    }
+
+    .play-button:active {
+        transform: scale(1);
+    }
+    .play-button {
+    position: absolute;
+    top: 10%; /* Mueve el botón al 50% desde la parte superior */
+    left: 10%; /* Mueve el botón al 50% desde la parte izquierda */
+    transform: translate(-50%, -50%); /* Centra el botón */
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+</style>
+
+
